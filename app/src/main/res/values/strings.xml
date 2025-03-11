@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">springen</string>
+    <string name="inloggen">INLOGGEN</string>
+    <string name="ga_terug_naar_main">Ga terug naar Main</string>
 </resources>
