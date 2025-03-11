@@ -1,6 +1,8 @@
 package boudewijns.eerste.springen
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,12 @@ class inloggenActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val returnbutton = findViewById<Button>(R.id.btnInloggenTerug)
+        returnbutton.setOnClickListener {
+            Intent(this, MainActivity::class.java)
+            }
         }
     }
 }
